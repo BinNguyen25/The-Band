@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+
+        <div id="header">
+            <!-- Begin: Nav -->
+            <ul id="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Band</a></li>
+                <li><a href="">Tour</a></li>
+                <li><a href="">Contact</a></li>
+                <li>
+                    <a href="">
+                        More
+                        <i class="more-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="">Merchandise</a></li>
+                        <li><a href="">Extras</a></li>
+                        <li><a href="">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End: Nav -->
+            
+            <!-- Begin: Search -->
+                <div class="search-button">
+                    <i class="search-icon ti-search"></i>
+                </div>
+            <!-- End: Search -->
+
+        </div>
+
+        <div id="slider">
+            <div class="text-content">
+                <div class="text-heading">Chicago</div>
+                <div class="text-description">Thank you, Chicago - A night we won't forget.</div>
+            </div>
+        </div>
+
+        <div id="content">
+
+        </div>
+
+        <div id="footer">
+
+        </div>
+
+    </div>
+</body>
+</html>
+------------------------------------------------------------------
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;   
+    right: 0;
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: black;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%),
+                0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0 16px;
+    line-height: 38px;
+    min-width: 160px;
+}
+
+#nav .more-down {
+    font-size: 12px;
+}
+
+#header .search-button {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-button:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(/assets/img/Slider/Slider\ 1.jpg) top center / cover no-repeat ;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content{
+
+}
+
+#footer{
+
+}
